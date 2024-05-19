@@ -2,7 +2,7 @@ const getLong = (a: number[][]): number => {
   return Math.floor(a.length / 2);
 };
 
-export const parallelIII = (a: number[][], b: number[][]) => {
+export const ParallelIII = (a: number[][], b: number[][]) => {
   const processBlock = (
     i1: number,
     j1: number,

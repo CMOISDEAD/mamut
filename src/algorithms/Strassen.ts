@@ -7,7 +7,6 @@ const sub = (a: number[][], b: number[][]) => {
 };
 
 const split = (matrix: number[][]) => {
-  console.time("Strassen");
   /*
     Splits a given matrix into quarters.
   Input: nxn matrix
@@ -59,8 +58,6 @@ const Strassen = (x: number[][], y: number[][]) => {
   // Combining the 4 quadrants into a single matrix by stacking horizontally and vertically.
   let top = c11.map((x, i) => x.concat(c12[i]));
   let bottom = c21.map((x, i) => x.concat(c22[i]));
-
-  console.timeEnd("Strassen");
   return top.concat(bottom);
 };
 

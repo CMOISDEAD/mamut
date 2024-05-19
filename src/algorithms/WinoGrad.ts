@@ -1,5 +1,4 @@
 const WinogradOriginal = (A: number[][], B: number[][]) => {
-  console.time("WinogradOriginal");
   let N = A.length;
   let M = A[0].length;
   let P = B.length;
@@ -59,7 +58,6 @@ const WinogradOriginal = (A: number[][], B: number[][]) => {
     }
   }
 
-  console.timeEnd("WinogradOriginal");
   return result;
 };
 

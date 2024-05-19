@@ -1,13 +1,13 @@
 import path from "path";
 
-const file = Bun.file(path.join(__dirname, "..", "..", "data", "times.txt"));
-const writer = file.writer();
+const p = path.join(__dirname, "..", "..", "data", "times.txt");
+const file = Bun.file(p);
 
-export const write = async (name: string, time: number) => {
+export const init = async () => await Bun.write(p, "");
+
+export const write = async (name: string, time: number, size: number) => {
   const content = await file.text();
-  writer.write(content);
-  writer.write(`${name}: ${time.toFixed(8)}\n`);
-  writer.end();
+  await Bun.write(p, `${content}${size} - ${name}: ${time.toFixed(8)}\n`);
 };
 
 export const read = async () => {

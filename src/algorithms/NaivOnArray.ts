@@ -1,5 +1,4 @@
 const NaivOnArray = (m1: number[][], m2: number[][]) => {
-  console.time("NaivOnArray");
   let result: number[][] = [];
   for (let i = 0; i < m1.length; i++) {
     result[i] = [];
@@ -10,7 +9,6 @@ const NaivOnArray = (m1: number[][], m2: number[][]) => {
       }
     }
   }
-  console.timeEnd("NaivOnArray");
   return result;
 };
 

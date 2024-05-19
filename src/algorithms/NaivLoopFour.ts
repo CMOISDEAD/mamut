@@ -1,5 +1,4 @@
 const NaivLoopUnrollingFour = (A: number[][], B: number[][]) => {
-  console.time("NaivLoopUnrollingFour");
   let N = A.length;
   let M = B[0].length;
   let P = B.length;
@@ -72,7 +71,6 @@ const NaivLoopUnrollingFour = (A: number[][], B: number[][]) => {
       }
     }
   }
-  console.timeEnd("NaivLoopUnrollingFour");
   return result;
 };
 

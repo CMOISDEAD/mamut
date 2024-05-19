@@ -32,7 +32,6 @@ const WinogradScaled = (
   matrixA: number[][],
   matrixB: number[][],
 ): number[][] => {
-  console.time("WinogradScaled");
   const a = normInf(matrixA);
   const b = normInf(matrixB);
   const lambda = Math.floor(0.5 + Math.log(b / a / Math.log(4)));
@@ -41,7 +40,6 @@ const WinogradScaled = (
   const newB = scalar(matrixB, Math.pow(2, lambda));
 
   const result = WinogradOriginal(newA, newB);
-  console.timeEnd("WinogradScaled");
   return result;
 };
 
