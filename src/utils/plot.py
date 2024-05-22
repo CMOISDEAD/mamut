@@ -12,7 +12,7 @@ with open(file_path, "r") as file:
         # parse all the data
         parts = line.strip().split(" - ")
         size, rest = parts[0], parts[1]
-        algo, time = rest.split(": ")
+        algo, time = rest.split(":")
 
         # Add the data to the lists
         algorithms.append(algo)

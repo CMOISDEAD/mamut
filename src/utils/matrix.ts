@@ -65,9 +65,11 @@ export const read_matrix = async (
 };
 
 export const default_matrix = async () => {
-  const sizes = [2, 4, 16, 32, 64, 128, 256, 512, 1024, 2048];
+  const sizes = [2, 4, 16, 32, 64, 128];
 
   sizes.forEach(async (size) => {
     await generate_matrix(size);
   });
 };
+
+default_matrix()

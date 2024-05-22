@@ -1,13 +1,15 @@
-16 - NaivOnArray: 2.14931700
-16 - NaivLoopUnrollingTwo: 578.10623200
-16 - NaivLoopUnrollingFour: 34.38209400
-16 - WinogradOriginal: 171.39222600
-16 - WinogradScaled: 172.88519400
-16 - Strassen: 6738.72540200
-16 - StrassenWinograd: 336.50864400
-16 - SeqBlock3III: 784.11802300
-16 - SeqBlock3IV: 933.26823600
-16 - SeqBlock3V: 1330.15934200
-16 - ParallelIII: 633.28887900
-16 - ParallelIV: 805.36950400
-16 - ParallelV: 670.53248900
+2048 - NaivOnArray:	68232.3938
+2048 - NaivLoopUnrollingTwo:	43702.3838
+2048 - NaivLoopUnrollingFour:	44995.28484
+2048 - WinogradOriginal:	39848.4839
+2048 - WinogradScaled:	34010.358
+2048 - StrassenNaiv:	1102.83930
+2048 - StrassenWinograd:	1164.9273
+2048 - III.3 Sequential block:	14675.1928
+2048 - III.4 Parallel Block:	13699.6515
+2048 - III.5 Enhanced Parallel Block:	7299.6514
+2048 - IV.3 Sequential block:	4159.7881
+2048 - IV.4 Parallel Block:	4074.9383
+2048 - IV. 5 Enhanced Parallel Block:	2190.5850
+2048 - V.3 Sequential block:	45137.919
+2048 - V.4 Parallel Block:	50485.09123
